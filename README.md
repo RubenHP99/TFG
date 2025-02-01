@@ -27,7 +27,7 @@ validación de imágenes, base de datos con la información de los usuarios regi
 Para la tarea de visión artificial, se ha utilizado un modelo de clasificación de YOLOv8. YOLO es una familia de modelos de detección de objetos en tiempo real que se destacan por su velocidad y precisión. A diferencia de otros modelos que analizan la imagen en múltiples etapas, YOLO procesa toda la imagen de una vez, lo que le permite detectar objetos de manera más rápida y eficiente. 
 Para el entrenamiento del modelo se han utilizado el data set de [Quick, Draw!](https://quickdraw.withgoogle.com/data) para obtener un total de 50000 imagenes repartidas en 50 clases.
 
-Tras el entrenamiento, se ha geenrado la matriz de confusionismos para observar los resultados obtenidos:
+Tras el entrenamiento, se ha geenrado la matriz de confusión para observar los resultados obtenidos:
 
 <p align="center">
   <img src="imagenes/confusion_matrix_normalized.png" alt="Matriz de confusión normalizada" width="600" height="500">
