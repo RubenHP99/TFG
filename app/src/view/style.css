@@ -1,0 +1,656 @@
+@font-face {
+    font-family: gochiHand;
+    src: url("/GochiHand.ttf");
+}
+
+@font-face {
+    font-family: sketch;
+    src: url("/Sketch3D.otf");
+}
+
+/*--------------------------------------------------*/
+/* ------------------>MENU<------------------------ */
+/*--------------------------------------------------*/
+body {
+    text-align: center;
+    background-color: #00b7ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+    /*Para que no se pueda hacer scroll*/
+    overflow: hidden;
+    /*Para que no se pueda seleccionar el texto de los botones al arrastrar el raton*/
+    user-select: none;
+    font-family: "gochiHand";
+}
+
+
+#gameLogo {
+    height: 60vh;
+    margin-bottom: -8vh;
+    animation: softShake 5s linear infinite;
+}
+
+
+h1 {
+    font-family: "sketch";
+    font-size: 8vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    font-weight: normal;
+    animation: softShake 5s linear infinite;
+}
+
+
+#initialMenu {
+    width: 45%;
+    margin: auto;
+}
+
+
+#initialMenu div {
+    margin-top: 5%;
+}
+
+
+.textInput {
+    font-family: "gochiHand";
+    font-size: 3vw;
+    font-weight: bold;
+    width: 45%;
+    background: none;
+    border-style: none;
+    border-bottom: solid black 1vh;
+    outline: none;
+    text-align: center;
+    margin: 1%;
+}
+
+
+.textInput:focus {
+    border-bottom: solid yellow 1vh;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+.simpleButton {
+    font-family: "gochiHand";
+    font-size: 3vw;
+    font-weight: bold;
+    background-image: linear-gradient(40deg, orange, yellow);
+    box-shadow: 0.6vw 0.3vw 0.3vw black;
+    border-top-right-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+    border: solid black 0.7vh;
+    cursor: pointer;
+    padding: 2vh;
+    margin: 2%;
+}
+
+
+.simpleButton:active {
+    box-shadow: inset 0.6vw 0.3vw 0.3vw black;
+}
+
+.simpleButton:disabled {
+    opacity: 0.7;
+}
+
+#initialMenu > div:nth-child(2) {
+    width: 50vw;
+}
+
+#joinButton, #createButton{
+
+    margin-right: 3vw;
+}
+
+
+.optionButton {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-image: linear-gradient(40deg, orange, yellow);
+    box-shadow: 0.6vw 0.3vw 0.3vw black;
+    border: solid black 0.7vh;
+    cursor: pointer;
+}
+
+
+.optionButton:active {
+    box-shadow: inset 0.6vw 0.3vw 0.3vw black;
+}
+
+.optionButton:disabled {
+    opacity: 0.5;
+}
+
+
+.optionButton img {
+    height: 70%;
+}
+
+
+#options {
+    position: absolute;
+    top: 2%;
+    left: 90%;
+}
+
+#options * {
+    margin: 5%;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+
+@keyframes softShake{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(5deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+
+
+
+/*--------------------------------------------------*/
+/* ------------------>CREATE ROOM<----------------- */
+/*--------------------------------------------------*/
+#modeSelect {
+    margin-bottom: 2%;
+}
+
+
+#modeLogo {
+    width: 10vw;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+#modeSelect button img {
+    height: 75%;
+}
+
+
+p {
+    font-family: "gochiHand";
+    width: 45vw;
+    font-size: 2vw;
+    margin: auto;
+    font-weight: bold;
+}
+
+
+#modeOptions input {
+    width: 22%;
+    margin-bottom: 4vh;
+}
+
+
+/*--------------------------------------------------*/
+/* ------------------>HILL CHAMPION<--------------- */
+/*--------------------------------------------------*/
+.container {
+    margin: 2vh;
+    padding: 1vw;
+    border: solid black 0.7vw;
+    border-radius: 4vh;
+    width: 25%;
+    font-size: 2.5vw;
+}
+
+#goalLabel {
+    position: absolute;
+    top: 4%;
+    left: 84%;
+    font-size: 3vw;
+}
+
+#goalContainer {
+    position: absolute;
+    top: 10%;
+    left: 76%;
+    width: 18vw;
+    border-color: yellow;
+}
+
+
+#toolsContainer {
+    position: absolute;
+    top: 5%;
+}
+
+#paintButton,
+#eraseButton {
+    width: 45%;
+}
+
+#resultContainer {
+    position: absolute;
+    top: 60%;
+}
+
+#paintButton {
+    margin-left: 4%;
+    box-shadow: inset 0.6vw 0.3vw 0.3vw black;
+}
+
+#strokeSlider {
+    width: 90%;
+    margin-top: 5%;
+}
+
+hr {
+    height: 0.7vw;
+    background-color: black;
+    border-style: none;
+    margin: 5% 0% 5% 0%;
+}
+
+
+#clearCanvas,
+#validButton {
+    width: 90%;
+}
+
+
+#result {
+    font-size: 2.3vw;
+    margin-top: 3%;
+    padding: 1%;
+    border: solid black 0.4vw;
+    border-radius: 10px;
+    display: block;
+}
+
+
+canvas {
+    cursor: url("/pencil.cur"), auto;
+    border: solid black 0.7vw;
+    border-radius: 50px;
+    position: absolute;
+    top: 3%;
+    left: 31.5%;
+}
+
+
+#names {
+    position: absolute;
+    top: 30%;
+    left: 73%;
+    border-style: none;
+}
+
+#playersCount {
+    font-size: 3vw;
+}
+
+
+#playerList {
+    font-size: 2.5vw;
+    font-weight: bold;
+    list-style-type: none;
+    border: solid black 0.7vw;
+    border-radius: 20px;
+    margin: auto;
+    width: 18vw;
+    margin-top: 2%;
+}
+
+#playerList li {
+    margin-right: 1vw;
+    margin-left: -1vw;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+
+/*--------------------------------------------------*/
+/* ------------------>LOADING<--------------------- */
+/*--------------------------------------------------*/
+#loadingGif {
+    width: 40vw;
+    margin-top: -4%;
+}
+
+
+#playersReady {
+    font-family: "gochiHand";
+    font-size: 5vw;
+    margin-left: -40%;
+}
+
+
+/*--------------------------------------------------*/
+/* ------------------>END ROUND<-------------------- */
+/*---------------------------------------------------*/
+#endRoundHeader, #roundState{
+    margin-top: 1vh;
+    margin-bottom: -1vh;
+}
+
+
+.playerScreen {
+    font-family: "gochiHand";
+    font-size: 3vw;
+    display: inline-block;
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+.playerCanvas {
+    display: block;
+    border: solid black 0.7vw;
+    border-radius: 20%;
+}
+
+
+
+/*--------------------------------------------------*/
+/* ------------------>END GAME<-------------------- */
+/*---------------------------------------------------*/
+#winnerHeader {
+    font-size: 8vw;
+    margin-top: 7%;
+}
+
+#menuButton {
+    width: 10vw;
+    height: 10vw;
+}
+
+#menuButton img {
+    height: 70%;
+}
+
+
+/*--------------------------------------------------*/
+/* ------------------>TIMES UP<-------------------- */
+/*--------------------------------------------------*/
+#timer {
+    font-family: "gochiHand";
+    font-size: 7vw;
+    position: absolute;
+    top: 62%;
+    left: 8%;
+}
+
+
+/*---------------------------------------------------*/
+/* -------------->END ROUND TIMES UP<--------------- */
+/*---------------------------------------------------*/
+#nextRoundButton {
+    position: absolute;
+    top: 5%;
+    left: 88%;
+    width: 8vw;
+    height: 8vw;
+}
+
+#nextRoundButton img {
+    height: 75%;
+}
+
+
+#rankingHeader {
+    margin-top: -2vh;
+}
+
+
+
+
+/*---------------------------------------------------*/
+/* ---------------->END GAME TIMES UP<-------------- */
+/*---------------------------------------------------*/
+#rankingHeader {
+    margin-top: 8vh;
+    margin-bottom: 6vh;
+}
+
+#rankingList img {
+    vertical-align: middle;
+}
+
+#rankingList {
+    font-family: "gochiHand";
+    font-size: 2.5vw;
+    list-style-type: none;
+    border: solid black 0.7vw;
+    border-radius: 20px;
+    width: 70vw;
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+}
+
+#pos0 {
+    color: yellow;
+}
+
+#pos1 {
+    color: green;
+}
+
+#pos2 {
+    color: brown;
+}
+
+#menuButton_time {
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    width: 10vw;
+    height: 10vw;
+}
+
+#menuButton_time img {
+    height: 70%;
+}
+
+
+
+/*---------------------------------------------------*/
+/* -------------------->USERS<---------------------- */
+/*---------------------------------------------------*/
+#backButton {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+#backButton img {
+    height: 75%;
+}
+
+#loginHeader {
+    margin-top: 10vh;
+}
+
+#userName,
+#passWord {
+    margin-bottom: 5%;
+}
+
+#email {
+    width: 40vw;
+    margin-bottom: 10vh;
+}
+
+
+#validCode {
+    margin-bottom: 10vh;
+}
+
+
+#profileMenu,
+#changePassMenu,
+#changeEmailMenu {
+    width: fit-content;
+    margin: auto;
+}
+
+#profileMenu *,
+#changePassMenu *,
+#changeEmailMenu * {
+    width: auto;
+    margin: auto;
+    display: block;
+    margin-block: 7%;
+}
+
+#deleteAccountButton {
+    background-image: linear-gradient(40deg, orange, red);
+}
+
+
+#stats {
+    width: fit-content;
+    border: solid black 0.7vw;
+    border-radius: 50px;
+    margin: auto;
+}
+
+
+#changePassHeader {
+    font-size: 6vw;
+    margin-bottom: -2vh;
+}
+
+
+
+
+/*--------------------------------------------------*/
+/* ------------------>PHONE<----------------------- */
+/*--------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: 7vw;
+    }
+
+
+    #initialMenu {
+        top: 48%;
+    }
+
+    #options {
+        top: 5%;
+        left: 85%;
+    }
+
+    #modeName {
+        font-size: 6vw;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+    
+    #goalLabel {
+        position: absolute;
+        top: 6%;
+        left: 83%;
+    }
+
+    #goalContainer {
+        top: 12%;
+        left: 75%;
+        padding: 1%;
+    }
+
+
+    #playerList {
+        font-size: 2.5vw;
+        width: 16vw;
+    }
+
+    #playerList li {
+        margin-right: -5vw;
+        margin-left: -10vw;
+    }
+
+    .container {
+        padding: 0.5vw;
+    }
+
+
+    canvas {
+        left: 30.5%;
+    }
+
+
+    #winnerHeader img {
+        height: 20vh;
+    }
+}
+
+
+@keyframes shake {
+
+    0% {
+        border-bottom: solid red 1vh;
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        border-bottom: solid red 1vh;
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
